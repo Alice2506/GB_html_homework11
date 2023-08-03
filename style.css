@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #222;
+}
+
+.headerWrapper {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainFoto {
+    background-color: #F1E4E6;
+}
