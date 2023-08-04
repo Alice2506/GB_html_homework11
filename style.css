@@ -55,9 +55,8 @@ body {
 }
 
 .productsGroup {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
 .featuredItems {
@@ -112,11 +111,6 @@ body {
 
     .products {
         width: 736px;
-    }
-
-    .productsGroup {
-        display: grid;
-        grid-template-columns: auto auto auto;
     }
 
     .featuredItems {
