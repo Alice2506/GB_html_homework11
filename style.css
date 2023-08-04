@@ -9,11 +9,85 @@ body {
 
 .headerWrapper {
     width: 1140px;
+    height: 75px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoGroup {
+    width: 111px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+    width: 159px;
     display: flex;
     justify-content: space-between;
 }
 
 .mainFoto {
     background-color: #F1E4E6;
+    display: flex;
 }
+
+.namWra {
+    padding-top: 299px;
+}
+
+.naming {
+    border-left: 12px solid #F16D7F;
+    height: 93px;
+    width: 405px;
+}
+
+.products {
+    width: 1140px;
+    margin: 0 auto;
+    margin-top: 65px;
+}
+
+.productsGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.featuredItems {
+    width: 1140px;
+    margin: 0 auto;
+    margin-top: 96px;
+}
+
+.featuredItems h2 {
+    text-align: center;
+}
+
+.featuredItems p {
+    text-align: center;
+}
+
+.featuredItemsPics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 30px;
+} 
+
+.browse {
+    width: 210px;
+    height: 46px;
+    border: 2px solid #F16D7F;
+    color: #F16D7F;
+}
+
+@media (max-width: 769px) {
+    .header {
+        background: red;
+    }
+}
+
+
