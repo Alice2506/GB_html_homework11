@@ -113,6 +113,22 @@ body {
     .products {
         width: 736px;
     }
+
+    .productsGroup {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .featuredItems {
+        width: 736px;
+    }
+
+    .featuredItemsPics {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        column-gap: 0;
+    }
 }
 
 
