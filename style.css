@@ -34,6 +34,10 @@ body {
     display: flex;
 }
 
+.tabletFoto {
+    display: none;
+}
+
 .namWra {
     padding-top: 299px;
 }
@@ -84,9 +88,30 @@ body {
     color: #F16D7F;
 }
 
-@media (max-width: 769px) {
-    .header {
-        background: red;
+@media(min-width: 768px) and (max-width: 1024px) {
+    .headerWrapper {
+        width: 736px;
+    }
+
+    .tabletFoto {
+        display: block;
+    }
+
+    .destoFoto {
+        display: none;
+    }
+
+    .namWra {
+        padding-top: 138px;
+    }
+
+    .naming {
+        height: 93px;
+        width: 311px;
+    }
+
+    .products {
+        width: 736px;
     }
 }
 
