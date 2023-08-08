@@ -130,6 +130,7 @@ body {
 }
 
 @media(max-width: 767px) {
+    
     .profile{
         display: none;
     }
@@ -142,6 +143,24 @@ body {
         width: 32px;
         height: 23px;
         display: block;
+    }
+
+    .mainFoto {
+        height: 363px;
+    }
+
+    .mainFotoDesktop {
+        display: none;
+    } 
+
+    .namWra {
+        padding-top: 148px;
+        margin: 0 auto;
+    }    
+
+    .naming {
+        width: 263px;
+        height: 66px;
     }
 }
 
