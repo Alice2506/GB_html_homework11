@@ -34,10 +34,6 @@ body {
     display: flex;
 }
 
-.tabletFoto {
-    display: none;
-}
-
 .namWra {
     padding-top: 299px;
 }
@@ -55,8 +51,9 @@ body {
 }
 
 .productsGroup {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .featuredItems {
@@ -92,12 +89,19 @@ body {
         width: 736px;
     }
 
-    .tabletFoto {
-        display: block;
+    .mainFotoDesktop {
+        width: 386px;
+        height: 368px;
     }
 
     .destoFoto {
-        display: none;
+        width: 233px;
+        height: 169px;
+    }
+
+    .foto4 {
+        width: 735px;
+        height: 117px;
     }
 
     .namWra {
@@ -122,6 +126,22 @@ body {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
         column-gap: 0;
+    }
+}
+
+@media(max-width: 767px) {
+    .profile{
+        display: none;
+    }
+    
+    .cart {
+        display: none;
+    }
+
+    .hamburger {
+        width: 32px;
+        height: 23px;
+        display: block;
     }
 }
 
