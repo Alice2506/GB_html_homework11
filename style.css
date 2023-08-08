@@ -56,6 +56,10 @@ body {
     margin-bottom: 30px;
 }
 
+.accesoriesMobile {
+    display: none;
+}
+
 .featuredItems {
     width: 1140px;
     margin: 0 auto;
@@ -130,6 +134,10 @@ body {
 }
 
 @media(max-width: 767px) {
+
+    .headerWrapper {
+        width: 359px;
+    }
     
     .profile{
         display: none;
@@ -161,6 +169,36 @@ body {
     .naming {
         width: 263px;
         height: 66px;
+    }
+
+    .productsGroup {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        margin-bottom: 30px;
+    }
+
+    .destoFoto {
+        width: 343px;
+        height: 248px;
+    }
+    
+    .foto4 {
+        display: none;
+    }
+
+    .accesoriesMobile {
+        display: block;
+    }
+
+    .featuredItems {
+        width: 359px;
+    }
+
+    .featuredItemsPics {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        column-gap: 0;
     }
 }
 
