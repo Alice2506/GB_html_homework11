@@ -2,6 +2,7 @@
 
 $customColor: #F16D7F;
 $backgroundColor: #222222;
+$backgroundSlider: #EAEAEA;
 
 body {
     margin: 0;
@@ -278,6 +279,27 @@ body {
         grid-template-rows: auto auto auto auto auto auto;
         column-gap: 0;
     }
+}
+
+// style Product
+
+.breadCrumbsWrapper {
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 148px;
+}
+
+.breadCrumbsCurrent {
+    color: $customColor;
+}
+
+.productSlider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $backgroundSlider;
 }
 
 

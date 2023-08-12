@@ -250,4 +250,22 @@ body {
     -moz-column-gap: 0;
          column-gap: 0;
   }
+}
+.breadCrumbsWrapper {
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 148px;
+}
+
+.breadCrumbsCurrent {
+  color: #F16D7F;
+}
+
+.productSlider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #EAEAEA;
 }/*# sourceMappingURL=style.css.map */
