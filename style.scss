@@ -1,10 +1,15 @@
+// Variables
+
+$customColor: #F16D7F;
+$backgroundColor: #222222;
+
 body {
     margin: 0;
     padding: 0;
 }
 
 .header {
-    background-color: #222;
+    background-color: $backgroundColor;
 }
 
 .headerWrapper {
@@ -54,7 +59,7 @@ body {
 }
 
 .naming {
-    border-left: 12px solid #F16D7F;
+    border-left: 12px solid $customColor;
     height: 93px;
     width: 405px;
 }
@@ -134,16 +139,28 @@ body {
 .subscribe {
     background-image: url("img/subscribeBackground.png");
     background-repeat: no-repeat;
+
+    &Wrapper {
+        width: 1140px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 448px;
+    }
 }
 
-.subscribeWrapper {
-    width: 1140px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 448px;
-}
+.footer {
+    background-color: #222;
+    color: #FBFBFB;
 
+    &Wrapper {
+        width: 1140px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 79px;
+    }
+}
 
 @media(min-width: 768px) and (max-width: 1024px) {
     .headerWrapper {

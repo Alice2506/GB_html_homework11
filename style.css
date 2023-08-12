@@ -4,7 +4,7 @@ body {
 }
 
 .header {
-  background-color: #222;
+  background-color: #222222;
 }
 
 .headerWrapper {
@@ -136,13 +136,24 @@ body {
   background-image: url("img/subscribeBackground.png");
   background-repeat: no-repeat;
 }
-
 .subscribeWrapper {
   width: 1140px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 448px;
+}
+
+.footer {
+  background-color: #222;
+  color: #FBFBFB;
+}
+.footerWrapper {
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 79px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
