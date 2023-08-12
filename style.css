@@ -1,212 +1,242 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
-    background-color: #222;
+  background-color: #222;
 }
 
 .headerWrapper {
-    width: 1140px;
-    height: 75px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 1140px;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .center {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .logoGroup {
-    width: 111px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 111px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hamburger {
-    width: 159px;
-    display: flex;
-    justify-content: space-between;
+  width: 159px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: none;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+.hamMenu:hover .menu {
+  display: block;
+  position: absolute;
 }
 
 .mainFoto {
-    background-color: #F1E4E6;
-    display: flex;
+  background-color: #F1E4E6;
+  display: flex;
 }
 
 .namWra {
-    padding-top: 299px;
+  padding-top: 299px;
 }
 
 .naming {
-    border-left: 12px solid #F16D7F;
-    height: 93px;
-    width: 405px;
+  border-left: 12px solid #F16D7F;
+  height: 93px;
+  width: 405px;
 }
 
 .products {
-    width: 1140px;
-    margin: 0 auto;
-    margin-top: 65px;
+  width: 1140px;
+  margin: 0 auto;
+  margin-top: 65px;
 }
 
 .productsGroup {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .accesoriesMobile {
-    display: none;
+  display: none;
 }
 
 .featuredItems {
-    width: 1140px;
-    margin: 0 auto;
-    margin-top: 96px;
+  width: 1140px;
+  margin: 0 auto;
+  margin-top: 96px;
 }
 
 .featuredItems h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .featuredItems p {
-    text-align: center;
+  text-align: center;
 }
 
 .featuredItemsPics {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    column-gap: 30px;
-} 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
 
 .browse {
-    width: 210px;
-    height: 46px;
-    border: 2px solid #F16D7F;
-    color: #F16D7F;
+  width: 210px;
+  height: 46px;
+  border: 2px solid #F16D7F;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
 }
 
-@media(min-width: 768px) and (max-width: 1024px) {
-    .headerWrapper {
-        width: 736px;
-    }
-
-    .mainFotoDesktop {
-        width: 386px;
-        height: 368px;
-    }
-
-    .destoFoto {
-        width: 233px;
-        height: 169px;
-    }
-
-    .foto4 {
-        width: 735px;
-        height: 117px;
-    }
-
-    .namWra {
-        padding-top: 138px;
-    }
-
-    .naming {
-        height: 93px;
-        width: 311px;
-    }
-
-    .products {
-        width: 736px;
-    }
-
-    .featuredItems {
-        width: 736px;
-    }
-
-    .featuredItemsPics {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        column-gap: 0;
-    }
+.browse a {
+  text-decoration: none;
+  color: #F16D7F;
 }
 
-@media(max-width: 767px) {
-
-    .headerWrapper {
-        width: 359px;
-    }
-    
-    .profile{
-        display: none;
-    }
-    
-    .cart {
-        display: none;
-    }
-
-    .hamburger {
-        width: 32px;
-        height: 23px;
-        display: block;
-    }
-
-    .mainFoto {
-        height: 363px;
-    }
-
-    .mainFotoDesktop {
-        display: none;
-    } 
-
-    .namWra {
-        padding-top: 148px;
-        margin: 0 auto;
-    }    
-
-    .naming {
-        width: 263px;
-        height: 66px;
-    }
-
-    .products {
-        width: 359px;
-    }
-
-    .productsGroup {
-        display: grid;
-        grid-template-rows: auto auto auto;
-        margin-bottom: 30px;
-    }
-
-    .destoFoto {
-        width: 343px;
-        height: 248px;
-    }
-    
-    .foto4 {
-        display: none;
-    }
-
-    .accesoriesMobile {
-        display: block;
-    }
-
-    .featuredItems {
-        width: 359px;
-    }
-
-    .featuredItemsPics {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto auto auto;
-        column-gap: 0;
-    }
+.service {
+  background-color: #222;
+  margin-top: 95px;
 }
 
+.serviceWrapper {
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.serviceItem {
+  width: 360px;
+  color: #FBFBFB;
+  text-align: center;
+  margin-top: 104px;
+  margin-bottom: 104px;
+}
+
+.subscribe {
+  background-image: url("img/subscribeBackground.png");
+  background-repeat: no-repeat;
+}
+
+.subscribeWrapper {
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 448px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .headerWrapper {
+    width: 736px;
+  }
+  .mainFotoDesktop {
+    width: 386px;
+    height: 368px;
+  }
+  .destoFoto {
+    width: 233px;
+    height: 169px;
+  }
+  .foto4 {
+    width: 735px;
+    height: 117px;
+  }
+  .namWra {
+    padding-top: 138px;
+  }
+  .naming {
+    height: 93px;
+    width: 311px;
+  }
+  .products {
+    width: 736px;
+  }
+  .featuredItems {
+    width: 736px;
+  }
+  .featuredItemsPics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+}
+@media (max-width: 767px) {
+  .headerWrapper {
+    width: 359px;
+  }
+  .profile {
+    display: none;
+  }
+  .cart {
+    display: none;
+  }
+  .hamburger {
+    width: 32px;
+    height: 23px;
+    display: block;
+  }
+  .mainFoto {
+    height: 363px;
+  }
+  .mainFotoDesktop {
+    display: none;
+  }
+  .namWra {
+    padding-top: 148px;
+    margin: 0 auto;
+  }
+  .naming {
+    width: 263px;
+    height: 66px;
+  }
+  .products {
+    width: 359px;
+  }
+  .productsGroup {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    margin-bottom: 30px;
+  }
+  .destoFoto {
+    width: 343px;
+    height: 248px;
+  }
+  .foto4 {
+    display: none;
+  }
+  .accesoriesMobile {
+    display: block;
+  }
+  .featuredItems {
+    width: 359px;
+  }
+  .featuredItemsPics {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
