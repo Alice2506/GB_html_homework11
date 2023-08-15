@@ -1,6 +1,8 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
   margin: 0;
   padding: 0;
+  font-family: "Lato", Arial, sans-serif;
 }
 
 .header {
@@ -16,7 +18,8 @@ body {
 }
 
 .center {
-  margin: 0 auto;
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
 }
 
 .logoGroup {
@@ -27,9 +30,10 @@ body {
 }
 
 .hamburger {
-  width: 159px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 33px;
 }
 
 .menu {
@@ -47,16 +51,27 @@ body {
 .mainFoto {
   background-color: #F1E4E6;
   display: flex;
-}
-
-.namWra {
-  padding-top: 299px;
+  padding-left: calc(50% - 800px);
+  padding-right: calc(50% - 800px);
 }
 
 .naming {
   border-left: 12px solid #F16D7F;
   height: 93px;
   width: 405px;
+  padding-left: 16px;
+  margin-top: 290px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.namingItem900 {
+  font-size: 48px;
+  font-weight: 900;
+}
+.namingItemColor {
+  color: #F16D7F;
 }
 
 .products {
@@ -69,6 +84,23 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+}
+.productsGroupItem {
+  position: relative;
+}
+.productsGroupTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFF;
+  text-align: center;
+}
+.productsGroupTitle .namingItemColor {
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .accesoriesMobile {
@@ -83,10 +115,13 @@ body {
 
 .featuredItems h2 {
   text-align: center;
+  font-size: 30px;
 }
 
 .featuredItems p {
   text-align: center;
+  color: #9F9F9F;
+  font-size: 14px;
 }
 
 .featuredItemsPics {
@@ -95,6 +130,26 @@ body {
   grid-template-rows: auto auto;
   -moz-column-gap: 30px;
        column-gap: 30px;
+  row-gap: 25px;
+  margin-top: 48px;
+}
+
+.item {
+  text-align: left;
+}
+.item h3 {
+  font-size: 13px;
+  font-weight: 400;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.item p {
+  text-align: left;
+  color: #5D5D5D;
+  font-size: 14px;
+  font-weight: 300;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .browse {

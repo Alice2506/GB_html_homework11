@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,16 +31,30 @@
     <div class="content">
         <section class="mainFoto">
             <img class="mainFotoDesktop" src="img/mainFoto.png" alt="mainFoto">
-            <div class="namWra"><img class="naming" src="img/name.svg" alt="naming"></div>
+            <div class="naming">
+                <span class="namingItem900">THE BRAND </span><br>OF LUXERIOUS<span class="namingItemColor"> FASHION</span>
+            </div>
         </section>
         <section class="products center">
             <div class="productsGroup">
-                <a href="#"><img class="foto1 destoFoto" src="img/1-forWomen.png" alt="for women"></a>
-                <a href="#"><img class="foto2 destoFoto" src="img/2-forMen.jpg" alt="for men"></a>
-                <a href="#"><img class="foto3 destoFoto" src="img/3-forKids.png" alt="for kids"></a>
+                <div class="productsGroupItem">
+                    <a href="#"><img class="foto1 destoFoto" src="img/forWomen.png" alt="for women"></a>
+                    <p class="productsGroupTitle">30% OFF<br><span class="namingItemColor">FOR WOMEN</span></p>
+                </div>
+                <div class="productsGroupItem">
+                    <a href="#"><img class="foto2 destoFoto" src="img/forMen.jpg" alt="for men"></a>
+                    <p class="productsGroupTitle">HOT DEAL<br><span class="namingItemColor">FOR MEN</span></p>
+                </div>
+                <div class="productsGroupItem">
+                    <a href="#"><img class="foto3 destoFoto" src="img/forChildren.jpg" alt="for kids"></a>
+                    <p class="productsGroupTitle">NEW ARRIVALS<br><span class="namingItemColor">FOR KIDS</span></p>
+                </div>
             </div>
-            <a href="#"><img class="foto4" src="img/4-ACCESORIES.png" alt="accessories"></a>
-            <a href="#"><img class="accesoriesMobile" src="img/accesoriesMobile.png" alt="accessories"></a>
+            <div class="productsGroupItem">
+                <a href="#"><img class="foto4" src="img/accesories.jpg" alt="accessories"></a>
+                <a href="#"><img class="accesoriesMobile" src="img/accesoriesMobile.png" alt="accessories"></a>
+                <p class="productsGroupTitle">LUXIROUS & TRENDY<br><span class="namingItemColor">ACCESORIES</span></p>
+            </div>
         </section>
         <section class="featuredItems">
             <h2>Featured Items</h2>
@@ -47,7 +64,7 @@
                     <a href="#"><img src="img/Image.png" alt="image"></a>
                     <h3>ELLERY X M'O CAPSULE</h3>
                     <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p>$52.00</p>
+                    <p class="customColor">$52.00</p>
                 </div>
                 <div class="item">
                     <a href="#"><img src="img/Image2.png" alt="image"></a>
