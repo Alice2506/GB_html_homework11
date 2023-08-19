@@ -22,6 +22,10 @@
   padding-right: calc(50% - 570px);
 }
 
+.customColor {
+  color: #F16D7F;
+}
+
 .logoGroup {
   width: 111px;
   display: flex;
@@ -112,18 +116,15 @@
   margin: 0 auto;
   margin-top: 96px;
 }
-
 .featuredItems h2 {
   text-align: center;
   font-size: 30px;
 }
-
-.featuredItems p {
+.featuredItemsDescription {
   text-align: center;
   color: #9F9F9F;
   font-size: 14px;
 }
-
 .featuredItemsPics {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -137,19 +138,67 @@
 .item {
   text-align: left;
 }
+.itemImage {
+  position: relative;
+}
+.itemButton {
+  width: 139px;
+  height: 44px;
+  border: 1px solid #FFF;
+  color: #FFF;
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.itemButton::before {
+  content: url("img/itemCart.svg");
+  display: inline-block;
+  width: 26px;
+  height: 24px;
+  margin-right: 11px;
+}
+.itemImage:hover .itemButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.itemHover {
+  width: 360px;
+  height: 420px;
+  position: absolute;
+  background-color: rgba(58, 56, 56, 0.86);
+  z-index: 2;
+  top: 0%;
+  display: none;
+}
+.itemImage:hover .itemHover {
+  display: block;
+}
 .item h3 {
   font-size: 13px;
   font-weight: 400;
   padding-left: 16px;
   padding-right: 16px;
+  margin-top: 25px;
+  color: #000;
 }
 .item p {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.item .itemDescription {
   text-align: left;
   color: #5D5D5D;
   font-size: 14px;
   font-weight: 300;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .browse {

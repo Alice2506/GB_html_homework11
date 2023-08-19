@@ -6,6 +6,7 @@ $customColor: #F16D7F;
 $backgroundColor: #222222;
 $backgroundSlider: #EAEAEA;
 $mainPhotoBackground: #F1E4E6;
+$itemHover: #3A3838;
 
 * {
     margin: 0;
@@ -28,6 +29,10 @@ $mainPhotoBackground: #F1E4E6;
 .center {
     padding-left: calc(50% - 570px);
     padding-right: calc(50% - 570px);
+}
+
+.customColor {
+    color: $customColor;
 }
 
 .logoGroup {
@@ -124,45 +129,100 @@ $mainPhotoBackground: #F1E4E6;
     width: 1140px;
     margin: 0 auto;
     margin-top: 96px;
-}
 
-.featuredItems h2 {
-    text-align: center;
-    font-size: 30px;
-}
+    & h2 {
+        text-align: center;
+        font-size: 30px;
+    }
 
-.featuredItems p {
-    text-align: center;
-    color: #9F9F9F;
-    font-size: 14px;
-}
+    &Description {
+        text-align: center;
+        color: #9F9F9F;
+        font-size: 14px;
+    }
 
-.featuredItemsPics {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    column-gap: 30px;
-    row-gap: 25px;
-    margin-top: 48px;
-} 
+    &Pics {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 30px;
+        row-gap: 25px;
+        margin-top: 48px;
+    }
+}
 
 .item {
         text-align: left;
+
+        &Image {
+            position: relative;
+        }
+
+        &Button {
+            width: 139px;
+            height: 44px;
+            border: 1px solid #FFF;
+            color: #FFF;
+            text-align: center;
+            vertical-align: middle;
+            background-color: transparent;
+            position: absolute;
+            z-index: 3;
+            top:50%;
+            left:50%;
+            transform:translate(-50%, -50%);
+            display: none;
+        }
+
+        &Button::before {
+            content: url('img/itemCart.svg');
+            display: inline-block;
+            width: 26px;
+            height: 24px;
+            margin-right: 11px;
+          }
+
+        &Image:hover .itemButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } 
+
+        &Hover {
+            width: 360px;
+            height: 420px;
+            position: absolute;
+            background-color: rgb(58,56,56, 0.86);
+            z-index: 2;
+            top: 0%;
+            display: none;
+        }
+
+        &Image:hover &Hover {
+            display: block;
+        }
         
         h3 {
             font-size: 13px;
             font-weight: 400;
             padding-left: 16px;
             padding-right: 16px;
+            margin-top: 25px;
+            color: #000;
         }
 
         p {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .itemDescription {
             text-align: left;
             color: #5D5D5D;
             font-size: 14px;
             font-weight: 300;
-            padding-left: 16px;
-            padding-right: 16px;
+            padding-top: 16px;
+            padding-bottom: 16px;
         }
     }
 
