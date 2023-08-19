@@ -217,28 +217,42 @@
   color: #F16D7F;
 }
 
+.browse:hover {
+  background-color: #F16D7F;
+}
+
+.browse:hover a {
+  color: #FFF;
+}
+
 .service {
   background-color: #222;
   margin-top: 95px;
 }
 
 .serviceWrapper {
-  width: 1140px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
 }
 
 .serviceItem {
   width: 360px;
+  height: 134px;
   color: #FBFBFB;
   text-align: center;
   margin-top: 104px;
   margin-bottom: 104px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .subscribe {
   background-image: url("img/subscribeBackground.png");
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 .subscribeWrapper {
   width: 1140px;
@@ -246,6 +260,36 @@
   justify-content: space-between;
   align-items: center;
   height: 448px;
+}
+.subscribe .review {
+  width: 360px;
+  height: 225px;
+  text-align: center;
+}
+.subscribe .review p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.subscribeForm {
+  width: 557px;
+  height: 142px;
+  text-align: center;
+}
+.subscribeForm .subscribeTitle {
+  color: #222;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 167.2%; /* 40.128px */
+}
+.subscribeForm .subscribeSubtitle {
+  color: #222;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 167.2%;
+}
+.subscribeForm form {
+  margin-top: 32px;
 }
 
 .footer {
