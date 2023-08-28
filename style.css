@@ -382,6 +382,24 @@
     -moz-column-gap: 0;
          column-gap: 0;
   }
+  .serviceWrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 49px;
+    padding-top: 49px;
+    padding-bottom: 49px;
+  }
+  .serviceItem {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .subscribeWrapper {
+    flex-direction: column;
+    min-height: 614px;
+    width: 736px;
+    justify-content: center;
+    gap: 48px;
+  }
 }
 @media (max-width: 767px) {
   .headerWrapper {
