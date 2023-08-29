@@ -528,12 +528,19 @@
   background-color: #F1E4E6;
   height: 148px;
 }
-.pageTitleWrapper {
+.pageTitle__wrapper {
   display: flex;
   align-items: center;
   height: 148px;
 }
-.pageTitleWrapper .pageTitleHeading {
+.pageTitle__wrapper .pageTitle__heading {
   font-size: 24px;
   font-weight: 400;
+}
+
+.cartContent__wrapper {
+  width: 1140px;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 96px;
 }/*# sourceMappingURL=style.css.map */

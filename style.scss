@@ -623,14 +623,23 @@ $itemHover: #3A3838;
     background-color: $mainPhotoBackground;
     height: 148px;
 
-    &Wrapper {
+    &__wrapper {
         display: flex;
         align-items: center;
         height: 148px;
         
-        .pageTitleHeading {
+        .pageTitle__heading {
             font-size: 24px;
             font-weight: 400;
         }
+    }
+}
+
+.cartContent {
+    &__wrapper {
+        width: 1140px;
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: 96px;
     }
 }
