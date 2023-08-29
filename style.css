@@ -7,14 +7,74 @@
 
 .header {
   background-color: #222222;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
-
 .headerWrapper {
-  width: 1140px;
+  max-width: 1140px;
   height: 75px;
+  display: flex;
+  justify-content: center;
+  gap: 859px;
+  align-items: center;
+}
+.header .logoGroup {
+  width: 111px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header .hamburger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 33px;
+}
+.header .hamburger__menu-open {
+  position: absolute;
+  top: 75px;
+  right: 0px;
+  width: 168px;
+  padding: 32px;
+  background-color: #FFF;
+  box-shadow: -5px 5px 15px rgba(34, 34, 34, 0.2);
+}
+.header .hamburger__menu-open h3 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+}
+.header .hamburger__menu-open .menuList {
+  margin-top: 20px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.header .hamburger__menu-open .menuItem {
+  list-style-type: none;
+  padding-left: 22px;
+  padding-top: 11px;
+}
+.header .hamburger__menu-open .menuItem a {
+  text-decoration: none;
+  color: #6F6E6E;
+}
+.header .hamburger__menu summary {
+  display: block;
+}
+.header .hamburger__menu summary::-webkit-details-marker {
+  display: none;
+}
+.header .menu {
+  display: none;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+.header .hamMenu:hover .menu {
+  display: block;
+  position: absolute;
 }
 
 .center {
@@ -24,32 +84,6 @@
 
 .customColor {
   color: #F16D7F;
-}
-
-.logoGroup {
-  width: 111px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.hamburger {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 33px;
-}
-
-.menu {
-  display: none;
-  width: 100px;
-  height: 100px;
-  background-color: green;
-}
-
-.hamMenu:hover .menu {
-  display: block;
-  position: absolute;
 }
 
 .mainFoto {
@@ -278,7 +312,8 @@
   color: #222;
   font-size: 24px;
   font-weight: 700;
-  line-height: 167.2%; /* 40.128px */
+  line-height: 167.2%;
+  /* 40.128px */
 }
 .subscribeForm .subscribeSubtitle {
   color: #222;
@@ -347,12 +382,22 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
   .headerWrapper {
-    width: 736px;
+    justify-content: center;
+    gap: 424px;
   }
   .mainFotoDesktop {
     width: 386px;
     height: 368px;
+  }
+  .mainFoto .naming {
+    height: 93px;
+    width: 311px;
+    margin-top: 138px;
   }
   .destoFoto {
     width: 233px;
@@ -361,13 +406,6 @@
   .foto4 {
     width: 735px;
     height: 117px;
-  }
-  .namWra {
-    padding-top: 138px;
-  }
-  .naming {
-    height: 93px;
-    width: 311px;
   }
   .products {
     width: 736px;
@@ -400,8 +438,15 @@
     justify-content: center;
     gap: 48px;
   }
+  .footerWrapper {
+    width: 736px;
+  }
 }
 @media (max-width: 767px) {
+  .center {
+    padding-left: calc(50% - 179px);
+    padding-right: calc(50% - 179px);
+  }
   .headerWrapper {
     width: 359px;
   }

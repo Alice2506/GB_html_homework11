@@ -11,17 +11,63 @@
 </head>
 <body>
     <header class="header">
-        <div class="headerWrapper center">
+        <div class="headerWrapper">
             <div class="logoGroup">
                 <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
                 <a href="#"><img src="img/lens.svg" alt="find"></a>
             </div>
             <div class="hamburgerGroup">
                 <div class="hamburger">
+                    <!--
                     <div class="hamMenu">
                         <a href="#" class="ham"><img src="img/hamburger.svg" alt="menu"></a>
-                        <nav class="menu"></nav>
+                        <nav class="menu">
+                            <details>
+                                <summary>MENU</summary>
+                            </details>
+                        </nav>
                     </div>
+                    -->
+                    <details class="hamburger__menu">
+                        <summary>
+                            <svg width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" fill="#E8E8E8"/>
+                            </svg>
+                        </summary>
+                        <div class="hamburger__menu-open">
+                            <h3>MENU</h3>
+                            <details class="menuList" open>
+                                <summary class="customColor">MEN</summary>
+                                <ul>
+                                    <li class="menuItem"><a href="#">Accessories</a></li>
+                                    <li class="menuItem"><a href="#">Bags</a></li>
+                                    <li class="menuItem"><a href="#">Denim</a></li>
+                                    <li class="menuItem"><a href="#">T-Shirts</a></li>
+                                </ul>
+                            </details>
+                            <details class="menuList" open>
+                                <summary class="customColor">WOMEN</summary>
+                                <ul>
+                                    <li class="menuItem"><a href="#">Accessories</a></li>
+                                    <li class="menuItem"><a href="#">Jackets & Coats</a></li>
+                                    <li class="menuItem"><a href="#">Polos</a></li>
+                                    <li class="menuItem"><a href="#">T-Shirts</a></li>
+                                    <li class="menuItem"><a href="#">Shirts</a></li>
+                                </ul>
+                            </details>
+                            <details class="menuList" open>
+                                <summary class="customColor">KIDS</summary>
+                                <ul>
+                                    <li class="menuItem"><a href="#">Accessories</a></li>
+                                    <li class="menuItem"><a href="#">Jackets & Coats</a></li>
+                                    <li class="menuItem"><a href="#">Polos</a></li>
+                                    <li class="menuItem"><a href="#">T-Shirts</a></li>
+                                    <li class="menuItem"><a href="#">Shirts</a></li>
+                                    <li class="menuItem"><a href="#">Bags</a></li>
+                                </ul>
+                            </details>
+                        </div>
+                    </details>
                     <a href="#" class="profile"><img src="img/profile.svg" alt="profile"></a>
                     <a href="#" class="cart"><img src="img/cart.svg" alt="cart"></a>
                 </div>

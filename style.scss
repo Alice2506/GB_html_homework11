@@ -16,14 +16,88 @@ $itemHover: #3A3838;
 
 .header {
     background-color: $backgroundColor;
-}
-
-.headerWrapper {
-    width: 1140px;
-    height: 75px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &Wrapper {
+        max-width: 1140px;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        gap: 859px;
+        align-items: center;
+    }
+
+    .logoGroup {
+        width: 111px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 33px;
+
+
+
+        &__menu-open {
+            position: absolute;
+            top: 75px;
+            right: 0px;
+            width: 168px;
+            padding: 32px;
+            background-color: #FFF;
+            box-shadow: -5px 5px 15px rgba(34, 34, 34, 0.2);
+
+            h3 {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+            }
+
+            .menuList {
+                margin-top: 20px;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+            }
+
+            .menuItem {
+                list-style-type: none;
+                padding-left: 22px;
+                padding-top: 11px;
+
+                & a {
+                    text-decoration: none;
+                    color: #6F6E6E;
+                }
+            }
+        }
+
+        &__menu summary {
+            display: block;
+        }
+
+        &__menu summary::-webkit-details-marker {
+            display: none;
+        }
+    }
+
+    .menu {
+        display: none;
+        width: 100px;
+        height: 100px;
+        background-color: green;
+    }
+
+    .hamMenu:hover .menu {
+        display: block;
+        position: absolute;
+    }
 }
 
 .center {
@@ -33,32 +107,6 @@ $itemHover: #3A3838;
 
 .customColor {
     color: $customColor;
-}
-
-.logoGroup {
-    width: 111px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.hamburger {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 33px;
-}
-
-.menu {
-    display: none;
-    width: 100px;
-    height: 100px;
-    background-color: green;
-}
-
-.hamMenu:hover .menu{
-    display: block;
-    position: absolute;
 }
 
 .mainFoto {
@@ -106,9 +154,9 @@ $itemHover: #3A3838;
 
     &Title {
         position: absolute;
-        top:50%;
-        left:50%;
-        transform:translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         font-size: 16px;
         font-weight: 400;
         color: #FFF;
@@ -152,79 +200,79 @@ $itemHover: #3A3838;
 }
 
 .item {
-        text-align: left;
+    text-align: left;
 
-        &Image {
-            position: relative;
-        }
-
-        &Button {
-            width: 139px;
-            height: 44px;
-            border: 1px solid #FFF;
-            color: #FFF;
-            text-align: center;
-            vertical-align: middle;
-            background-color: transparent;
-            position: absolute;
-            z-index: 3;
-            top:50%;
-            left:50%;
-            transform:translate(-50%, -50%);
-            display: none;
-        }
-
-        &Button::before {
-            content: url('img/itemCart.svg');
-            display: inline-block;
-            width: 26px;
-            height: 24px;
-            margin-right: 11px;
-          }
-
-        &Image:hover .itemButton {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        } 
-
-        &Hover {
-            width: 360px;
-            height: 420px;
-            position: absolute;
-            background-color: rgb(58,56,56, 0.86);
-            z-index: 2;
-            top: 0%;
-            display: none;
-        }
-
-        &Image:hover &Hover {
-            display: block;
-        }
-        
-        h3 {
-            font-size: 13px;
-            font-weight: 400;
-            padding-left: 16px;
-            padding-right: 16px;
-            margin-top: 25px;
-            color: #000;
-        }
-
-        p {
-            padding-left: 16px;
-            padding-right: 16px;
-        }
-
-        .itemDescription {
-            text-align: left;
-            color: #5D5D5D;
-            font-size: 14px;
-            font-weight: 300;
-            padding-top: 16px;
-            padding-bottom: 16px;
-        }
+    &Image {
+        position: relative;
     }
+
+    &Button {
+        width: 139px;
+        height: 44px;
+        border: 1px solid #FFF;
+        color: #FFF;
+        text-align: center;
+        vertical-align: middle;
+        background-color: transparent;
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+
+    &Button::before {
+        content: url('img/itemCart.svg');
+        display: inline-block;
+        width: 26px;
+        height: 24px;
+        margin-right: 11px;
+    }
+
+    &Image:hover .itemButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &Hover {
+        width: 360px;
+        height: 420px;
+        position: absolute;
+        background-color: rgb(58, 56, 56, 0.86);
+        z-index: 2;
+        top: 0%;
+        display: none;
+    }
+
+    &Image:hover &Hover {
+        display: block;
+    }
+
+    h3 {
+        font-size: 13px;
+        font-weight: 400;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-top: 25px;
+        color: #000;
+    }
+
+    p {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .itemDescription {
+        text-align: left;
+        color: #5D5D5D;
+        font-size: 14px;
+        font-weight: 300;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
 
 .browse {
     width: 210px;
@@ -293,9 +341,9 @@ $itemHover: #3A3838;
         text-align: center;
 
         & p {
-        font-size: 20px;
-        font-weight: 400;
-        margin-top: 30px;
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 30px;
         }
     }
 
@@ -308,7 +356,8 @@ $itemHover: #3A3838;
             color: #222;
             font-size: 24px;
             font-weight: 700;
-            line-height: 167.2%; /* 40.128px */
+            line-height: 167.2%;
+            /* 40.128px */
         }
 
         .subscribeSubtitle {
@@ -370,29 +419,44 @@ $itemHover: #3A3838;
 }
 
 .icon {
-        width: 32px;
-        height: 32px;
-        background-color: #FFF;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        &:hover {
-            background-color: $customColor;
-            .iconSvg path {
-                fill: #FFF;
-            }
+    &:hover {
+        background-color: $customColor;
+
+        .iconSvg path {
+            fill: #FFF;
         }
     }
+}
 
 @media(min-width: 768px) and (max-width: 1024px) {
-    .headerWrapper {
-        width: 736px;
+    .center {
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
     }
 
-    .mainFotoDesktop {
-        width: 386px;
-        height: 368px;
+    .headerWrapper {
+        justify-content: center;
+        gap: 424px;
+    }
+
+    .mainFoto {
+        &Desktop {
+            width: 386px;
+            height: 368px;
+        }
+
+        .naming {
+            height: 93px;
+            width: 311px;
+            margin-top: 138px;
+        }
     }
 
     .destoFoto {
@@ -403,15 +467,6 @@ $itemHover: #3A3838;
     .foto4 {
         width: 735px;
         height: 117px;
-    }
-
-    .namWra {
-        padding-top: 138px;
-    }
-
-    .naming {
-        height: 93px;
-        width: 311px;
     }
 
     .products {
@@ -430,7 +485,7 @@ $itemHover: #3A3838;
     }
 
     .service {
-    
+
         &Wrapper {
             flex-direction: column;
             align-items: center;
@@ -455,18 +510,28 @@ $itemHover: #3A3838;
             gap: 48px;
         }
     }
+
+    .footer {
+        &Wrapper {
+            width: 736px;
+        }
+    }
 }
 
 @media(max-width: 767px) {
+    .center {
+        padding-left: calc(50% - 179px);
+        padding-right: calc(50% - 179px);
+    }
 
     .headerWrapper {
         width: 359px;
     }
-    
-    .profile{
+
+    .profile {
         display: none;
     }
-    
+
     .cart {
         display: none;
     }
@@ -483,12 +548,12 @@ $itemHover: #3A3838;
 
     .mainFotoDesktop {
         display: none;
-    } 
+    }
 
     .namWra {
         padding-top: 148px;
         margin: 0 auto;
-    }    
+    }
 
     .naming {
         width: 263px;
@@ -509,7 +574,7 @@ $itemHover: #3A3838;
         width: 343px;
         height: 248px;
     }
-    
+
     .foto4 {
         display: none;
     }
@@ -550,5 +615,3 @@ $itemHover: #3A3838;
     align-items: center;
     background-color: $backgroundSlider;
 }
-
-
