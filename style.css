@@ -522,4 +522,18 @@
   justify-content: space-between;
   align-items: center;
   background-color: #EAEAEA;
+}
+
+.pageTitle {
+  background-color: #F1E4E6;
+  height: 148px;
+}
+.pageTitleWrapper {
+  display: flex;
+  align-items: center;
+  height: 148px;
+}
+.pageTitleWrapper .pageTitleHeading {
+  font-size: 24px;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */

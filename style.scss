@@ -616,3 +616,21 @@ $itemHover: #3A3838;
     align-items: center;
     background-color: $backgroundSlider;
 }
+
+// style Cart
+
+.pageTitle {
+    background-color: $mainPhotoBackground;
+    height: 148px;
+
+    &Wrapper {
+        display: flex;
+        align-items: center;
+        height: 148px;
+        
+        .pageTitleHeading {
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+}
