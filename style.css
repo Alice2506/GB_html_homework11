@@ -543,4 +543,27 @@
   display: grid;
   grid-template-columns: auto auto;
   margin-top: 96px;
+}
+.cartContent__item {
+  display: flex;
+  margin-bottom: 40px;
+  width: 652px;
+  box-shadow: 10px 10px 15px rgba(34, 34, 34, 0.2);
+}
+.cartContent__qualities {
+  padding-top: 22px;
+  padding-left: 31px;
+}
+.cartContent__qualities h3 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 262px;
+  margin-bottom: 42px;
+}
+.cartContent__qualities p {
+  color: #575757;
+  font-size: 22px;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
