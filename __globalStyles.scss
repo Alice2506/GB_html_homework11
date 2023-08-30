@@ -9,15 +9,14 @@
     padding-right: calc(50% - $contentWidth/2);
 
     @media(min-width: 768px) and (max-width: 1024px) {
-        padding-left: calc(50% - 368px);
-        padding-right: calc(50% - 368px);
+        padding-left: calc(50% - $contentWidthTablet/2);
+        padding-right: calc(50% - $contentWidthTablet/2);
     }
 
     @media(max-width: 767px) {
-        padding-left: calc(50% - 179px);
-        padding-right: calc(50% - 179px);
+        padding-left: calc(50% - $contentWidthMobile/2);
+        padding-right: calc(50% - $contentWidthMobile/2);
     }
-
 }
 
 .customColor {

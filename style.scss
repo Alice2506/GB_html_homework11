@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
-@import 'variables';
-@import 'globalStyles';
+@import '__variables.scss';
+@import '__globalStyles.scss';
 
 .header {
     background-color: $backgroundColor;
@@ -8,11 +8,11 @@
     justify-content: center;
     position: relative;
     
-    &Wrapper {
+    &__wrapper {
         height: 75px;
         display: flex;
-        justify-content: center;
-        gap: 859px;
+        width: $contentWidth;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -306,23 +306,47 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    &Wrapper {
-        width: 1140px;
+    &__wrapper {
+        width: $contentWidth;
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 448px;
+
+        @media(min-width: 768px) and (max-width: 1024px) {
+            width: $contentWidthTablet;
+            height: 614px;
+            flex-direction: column;
+            justify-content: start;
+            gap: 48px;
+        }
+    
+        @media(max-width: 767px) {
+            width: $contentWidthMobile;
+            flex-direction: column;
+            justify-content: start;
+            gap: 59px;
+            height: 550px;
+        }
     }
 
     .review {
         width: 360px;
         height: 225px;
         text-align: center;
-
+        
         & p {
             font-size: 20px;
             font-weight: 400;
             margin-top: 30px;
+        }
+
+        @media(min-width: 768px) and (max-width: 1024px) {
+            margin-top: 64px;
+        }
+
+        @media(max-width: 767px) {
+            margin-top: 64px;
         }
     }
 
@@ -379,11 +403,11 @@
 }
 
 .footer {
-    background-color: #222;
+    background-color: $backgroundColor;
     color: #FBFBFB;
 
-    &Wrapper {
-        width: 1140px;
+    &__wrapper {
+        width: $contentWidth;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -415,9 +439,8 @@
 }
 
 @media(min-width: 768px) and (max-width: 1024px) {
-    .headerWrapper {
-        justify-content: center;
-        gap: 424px;
+    .header__wrapper {
+        width: $contentWidthTablet;
     }
 
     .mainFoto {
@@ -486,15 +509,15 @@
     }
 
     .footer {
-        &Wrapper {
-            width: 736px;
+        &__wrapper {
+            width: $contentWidthTablet;
         }
     }
 }
 
 @media(max-width: 767px) {
-    .headerWrapper {
-        gap: 200px;
+    .header__wrapper {
+        width: $contentWidthMobile;
     }
 
     .profile {
@@ -561,6 +584,10 @@
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto auto auto;
         column-gap: 0;
+    }
+
+    .footer__wrapper {
+        width: $contentWidthMobile;
     }
 }
 
