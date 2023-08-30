@@ -2,20 +2,13 @@
 @import 'variables';
 @import 'globalStyles';
 
-// * {
-//     margin: 0;
-//     padding: 0;
-//     font-family: "Lato", Arial, sans-serif;
-// }
-
 .header {
     background-color: $backgroundColor;
     display: flex;
     justify-content: center;
     position: relative;
-
+    
     &Wrapper {
-        max-width: 1140px;
         height: 75px;
         display: flex;
         justify-content: center;
@@ -94,17 +87,6 @@
         position: absolute;
     }
 }
-
-// .center {
-//     // padding-left: calc(50% - 570px);
-//     // padding-right: calc(50% - 570px);
-//     padding-left: calc(50% - $contentWidth/2);
-//     padding-right: calc(50% - $contentWidth/2);
-// }
-
-// .customColor {
-//     color: $customColor;
-// }
 
 .mainFoto {
     background-color: $mainPhotoBackground;
@@ -433,11 +415,6 @@
 }
 
 @media(min-width: 768px) and (max-width: 1024px) {
-    .center {
-        padding-left: calc(50% - 368px);
-        padding-right: calc(50% - 368px);
-    }
-
     .headerWrapper {
         justify-content: center;
         gap: 424px;
@@ -516,13 +493,8 @@
 }
 
 @media(max-width: 767px) {
-    .center {
-        padding-left: calc(50% - 179px);
-        padding-right: calc(50% - 179px);
-    }
-
     .headerWrapper {
-        width: 359px;
+        gap: 200px;
     }
 
     .profile {
