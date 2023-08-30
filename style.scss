@@ -1,18 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import 'variables';
+@import 'globalStyles';
 
-// Variables
-
-$customColor: #F16D7F;
-$backgroundColor: #222222;
-$backgroundSlider: #EAEAEA;
-$mainPhotoBackground: #F1E4E6;
-$itemHover: #3A3838;
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Lato", Arial, sans-serif;
-}
+// * {
+//     margin: 0;
+//     padding: 0;
+//     font-family: "Lato", Arial, sans-serif;
+// }
 
 .header {
     background-color: $backgroundColor;
@@ -101,14 +95,16 @@ $itemHover: #3A3838;
     }
 }
 
-.center {
-    padding-left: calc(50% - 570px);
-    padding-right: calc(50% - 570px);
-}
+// .center {
+//     // padding-left: calc(50% - 570px);
+//     // padding-right: calc(50% - 570px);
+//     padding-left: calc(50% - $contentWidth/2);
+//     padding-right: calc(50% - $contentWidth/2);
+// }
 
-.customColor {
-    color: $customColor;
-}
+// .customColor {
+//     color: $customColor;
+// }
 
 .mainFoto {
     background-color: $mainPhotoBackground;
@@ -139,8 +135,8 @@ $itemHover: #3A3838;
 }
 
 .products {
-    width: 1140px;
-    margin: 0 auto;
+    // width: 1140px;
+    // margin: 0 auto;
     margin-top: 65px;
 }
 

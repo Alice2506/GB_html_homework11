@@ -79,8 +79,8 @@
 }
 
 .center {
-  padding-left: calc(50% - 570px);
-  padding-right: calc(50% - 570px);
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .customColor {
@@ -114,8 +114,6 @@
 }
 
 .products {
-  width: 1140px;
-  margin: 0 auto;
   margin-top: 65px;
 }
 

@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", Arial, sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - $contentWidth/2);
+    padding-right: calc(50% - $contentWidth/2);
+}
+
+.customColor {
+    color: $customColor;
+}
