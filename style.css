@@ -51,6 +51,9 @@
   align-items: center;
   gap: 33px;
 }
+.header .hamburger__svg:hover path {
+  fill: #F16D7F;
+}
 .header .hamburger__menu-open {
   position: absolute;
   z-index: 11;
@@ -86,6 +89,11 @@
 }
 .header .hamburger__menu summary::-webkit-details-marker {
   display: none;
+}
+.header .cart::after {
+  width: 19px;
+  height: 19px;
+  background-color: green;
 }
 .header .menu {
   display: none;
@@ -597,4 +605,81 @@
   color: #575757;
   font-size: 22px;
   font-weight: 400;
+}
+
+.registration__wrapper {
+  display: flex;
+  margin-top: 64px;
+  margin-bottom: 96px;
+  gap: 128px;
+}
+.registration__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration__form h3 {
+  color: #222222;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration__form .radioMaleFemale {
+  color: #000;
+  font-size: 11px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.registration__form .maleSpan {
+  margin-right: 10px;
+}
+.registration__paragraph {
+  color: #B1B1B1;
+  font-size: 13px;
+  font-weight: 300;
+  width: 360px;
+}
+.registration .registrationButton {
+  width: 167px;
+  height: 50px;
+  background-color: #F16D7F;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+}
+.registration__input {
+  width: 326px;
+  height: 45px;
+  border: 1px solid #6F6E6E;
+  color: #B1B1B1;
+  font-size: 13px;
+  font-weight: 300;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+.registration__loyalty h3 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 22px;
+}
+.registration__loyalty p {
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 21px;
+}
+.registration__loyaltyList {
+  margin-left: 43px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+}
+.registration__loyaltyList li {
+  margin-bottom: 16px;
 }/*# sourceMappingURL=style.css.map */
