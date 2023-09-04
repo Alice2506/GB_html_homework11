@@ -109,42 +109,105 @@
 .mainFoto {
   background-color: #F1E4E6;
   display: flex;
-  padding-left: calc(50% - 800px);
-  padding-right: calc(50% - 800px);
+  position: relative;
 }
-
-.naming {
+@media (max-width: 767px) {
+  .mainFoto {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mainFoto__desktop {
+    width: 386px;
+    height: 368px;
+  }
+}
+@media (max-width: 767px) {
+  .mainFoto__desktop {
+    display: none;
+  }
+}
+.mainFoto__naming {
   border-left: 12px solid #F16D7F;
   height: 93px;
   width: 405px;
   padding-left: 16px;
   margin-top: 290px;
+  margin-left: 64px;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  position: absolute;
+  left: 50%;
 }
-.namingItem900 {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mainFoto__naming {
+    height: 93px;
+    width: 311px;
+    margin-top: 138px;
+    margin-left: 41px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .mainFoto__naming {
+    width: 236px;
+    height: 66px;
+    margin-left: 0px;
+    margin-top: 0px;
+    position: relative;
+    left: auto;
+    font-size: 20px;
+  }
+}
+.mainFoto .namingItem900 {
   font-size: 48px;
   font-weight: 900;
 }
-.namingItemColor {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mainFoto .namingItem900 {
+    font-size: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .mainFoto .namingItem900 {
+    font-size: 38px;
+  }
+}
+.mainFoto .namingItemColor {
   color: #F16D7F;
 }
 
 .products {
   margin-top: 65px;
 }
-
-.productsGroup {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
+.products__group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 30px;
 }
-.productsGroupItem {
+.products__groupItem {
+  max-width: 360px;
+  height: 260px;
   position: relative;
 }
-.productsGroupTitle {
+.products__groupItem:first-child {
+  background-image: url("img/forWomen.png");
+}
+.products__groupItem:nth-child(2) {
+  background-image: url("img/forMen.jpg");
+}
+.products__groupItem:nth-child(3) {
+  background-image: url("img/forChildren.jpg");
+}
+.products__groupItem4 {
+  max-width: 1142px;
+  height: 180px;
+}
+.products__groupTitle {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -154,9 +217,11 @@
   color: #FFF;
   text-align: center;
 }
-.productsGroupTitle .namingItemColor {
-  font-size: 24px;
-  font-weight: 700;
+.products__groupItem4 {
+  height: 100px;
+  background-color: orange;
+  grid-column: 1/-1;
+  position: relative;
 }
 
 .accesoriesMobile {
@@ -427,18 +492,9 @@
   fill: #FFF;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .header__wrapper {
     width: 96vw;
-  }
-  .mainFotoDesktop {
-    width: 386px;
-    height: 368px;
-  }
-  .mainFoto .naming {
-    height: 93px;
-    width: 311px;
-    margin-top: 138px;
   }
   .destoFoto {
     width: 233px;

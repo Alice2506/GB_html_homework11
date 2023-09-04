@@ -100,61 +100,151 @@
 .mainFoto {
     background-color: $mainPhotoBackground;
     display: flex;
-    padding-left: calc(50% - 800px);
-    padding-right: calc(50% - 800px);
-}
+    position: relative;
 
-.naming {
-    border-left: 12px solid $customColor;
-    height: 93px;
-    width: 405px;
-    padding-left: 16px;
-    margin-top: 290px;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-
-    &Item900 {
-        font-size: 48px;
-        font-weight: 900;
+    @media(max-width: 767px) {
+        justify-content: center;
+        align-items: center;
     }
 
-    &ItemColor {
+    &__desktop {
+        @media(min-width: 768px) and (max-width: 1024px) {
+            width: 386px;
+            height: 368px;
+        }
+
+        @media(max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &__naming {
+        border-left: 12px solid $customColor;
+        height: 93px;
+        width: 405px;
+        padding-left: 16px;
+        margin-top: 290px;
+        margin-left: 64px;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        position: absolute;
+        left: 50%;
+
+        @media(min-width: 768px) and (max-width: 1024px) {
+            height: 93px;
+            width: 311px;
+            margin-top: 138px;
+            margin-left: 41px;
+            font-size: 24px;
+        }
+
+        @media(max-width: 767px) {
+            width: 236px;
+            height: 66px;
+            margin-left: 0px;
+            margin-top: 0px;
+            position: relative;
+            left: auto;
+            font-size: 20px;
+        }
+    }
+
+    .namingItem900 {
+        font-size: 48px;
+        font-weight: 900;
+
+        @media(min-width: 768px) and (max-width: 1024px) {
+            font-size: 44px;
+        }
+
+        @media(max-width: 767px) {
+            font-size: 38px;
+        }
+    }
+
+    .namingItemColor {
         color: $customColor;
     }
 }
 
 .products {
-    // width: 1140px;
-    // margin: 0 auto;
     margin-top: 65px;
-}
 
-.productsGroup {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+    &__group {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 30px;
 
-    &Item {
+        &Item {
+            max-width: 360px;
+            height: 260px;
+            position: relative;
+        }
+
+        &Item:first-child {
+            background-image: url('img/forWomen.png');
+        }
+
+        &Item:nth-child(2) {
+            background-image: url('img/forMen.jpg');
+        }
+
+        &Item:nth-child(3) {
+            background-image: url('img/forChildren.jpg');
+        }
+
+        &Item4 {
+            max-width: 1142px;
+            height: 180px;
+        }
+
+        &Title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 16px;
+            font-weight: 400;
+            color: #FFF;
+            text-align: center;
+        }
+    }
+
+    &__groupItem4 {
+        height: 100px;
+        background-color: orange;
+        grid-column: 1/-1;
         position: relative;
     }
 
-    &Title {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 16px;
-        font-weight: 400;
-        color: #FFF;
-        text-align: center;
-    }
+    // &__group {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     margin-bottom: 30px;
 
-    &Title .namingItemColor {
-        font-size: 24px;
-        font-weight: 700;
-    }
+    //     &Item {
+    //         position: relative;
+    //     }
+
+    //     &Title {
+    //         position: absolute;
+    //         top: 50%;
+    //         left: 50%;
+    //         transform: translate(-50%, -50%);
+    //         font-size: 16px;
+    //         font-weight: 400;
+    //         color: #FFF;
+    //         text-align: center;
+    //     }
+
+    //     &Title .namingItemColor {
+    //         font-size: 24px;
+    //         font-weight: 700;
+    //     }
+    // }
 }
 
 .accesoriesMobile {
@@ -447,22 +537,9 @@
     }
 }
 
-@media(min-width: 768px) and (max-width: 1024px) {
+@media(min-width: 768px) and (max-width: 1023px) {
     .header__wrapper {
         width: $contentWidthTablet;
-    }
-
-    .mainFoto {
-        &Desktop {
-            width: 386px;
-            height: 368px;
-        }
-
-        .naming {
-            height: 93px;
-            width: 311px;
-            margin-top: 138px;
-        }
     }
 
     .destoFoto {
