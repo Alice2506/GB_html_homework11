@@ -108,7 +108,7 @@
     }
 
     &__desktop {
-        @media(min-width: 768px) and (max-width: 1024px) {
+        @media(min-width: 768px) and (max-width: 1023px) {
             width: 386px;
             height: 368px;
         }
@@ -132,7 +132,7 @@
         position: absolute;
         left: 50%;
 
-        @media(min-width: 768px) and (max-width: 1024px) {
+        @media(min-width: 768px) and (max-width: 1023px) {
             height: 93px;
             width: 311px;
             margin-top: 138px;
@@ -155,7 +155,7 @@
         font-size: 48px;
         font-weight: 900;
 
-        @media(min-width: 768px) and (max-width: 1024px) {
+        @media(min-width: 768px) and (max-width: 1023px) {
             font-size: 44px;
         }
 
@@ -221,31 +221,11 @@
         position: relative;
     }
 
-    // &__group {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     margin-bottom: 30px;
-
-    //     &Item {
-    //         position: relative;
-    //     }
-
-    //     &Title {
-    //         position: absolute;
-    //         top: 50%;
-    //         left: 50%;
-    //         transform: translate(-50%, -50%);
-    //         font-size: 16px;
-    //         font-weight: 400;
-    //         color: #FFF;
-    //         text-align: center;
-    //     }
-
-    //     &Title .namingItemColor {
-    //         font-size: 24px;
-    //         font-weight: 700;
-    //     }
-    // }
+    &__namingItemColor {
+        font-size: 24px;
+        font-weight: 700;
+        color: $customColor;
+    }
 }
 
 .accesoriesMobile {
@@ -413,7 +393,7 @@
         align-items: center;
         height: 448px;
 
-        @media(min-width: 768px) and (max-width: 1024px) {
+        @media(min-width: 768px) and (max-width: 1023px) {
             width: $contentWidthTablet;
             height: 614px;
             flex-direction: column;
@@ -441,7 +421,7 @@
             margin-top: 30px;
         }
 
-        @media(min-width: 768px) and (max-width: 1024px) {
+        @media(min-width: 768px) and (max-width: 1023px) {
             margin-top: 64px;
         }
 
@@ -460,7 +440,6 @@
             font-size: 24px;
             font-weight: 700;
             line-height: 167.2%;
-            /* 40.128px */
         }
 
         .subscribeSubtitle {
