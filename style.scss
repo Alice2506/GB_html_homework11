@@ -178,10 +178,19 @@
         grid-template-rows: auto auto;
         gap: 30px;
 
+        @media(min-width: 768px) and (max-width: 1023px) {
+            gap: 20px;
+        }
+
         &Item {
             max-width: 360px;
             height: 260px;
             position: relative;
+
+            @media(min-width: 768px) and (max-width: 1023px) {
+                max-width: 233px;
+                height: 168px;
+            }
         }
 
         &Item:first-child {
@@ -200,6 +209,11 @@
             max-width: 1142px;
             height: 180px;
             background-image: url('img/accesories.jpg');
+
+            @media(min-width: 768px) and (max-width: 1023px) {
+                max-width: 736px;
+                height: 116px;
+            }
         }
 
         &Title {

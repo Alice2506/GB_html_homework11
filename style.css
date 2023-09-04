@@ -9,7 +9,7 @@
   padding-left: calc(50% - 40vw);
   padding-right: calc(50% - 40vw);
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .center {
     padding-left: calc(50% - 48vw);
     padding-right: calc(50% - 48vw);
@@ -189,10 +189,21 @@
   grid-template-rows: auto auto;
   gap: 30px;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .products__group {
+    gap: 20px;
+  }
+}
 .products__groupItem {
   max-width: 360px;
   height: 260px;
   position: relative;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .products__groupItem {
+    max-width: 233px;
+    height: 168px;
+  }
 }
 .products__groupItem:first-child {
   background-image: url("img/forWomen.png");
@@ -207,6 +218,12 @@
   max-width: 1142px;
   height: 180px;
   background-image: url("img/accesories.jpg");
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .products__groupItem4 {
+    max-width: 736px;
+    height: 116px;
+  }
 }
 .products__groupTitle {
   position: absolute;

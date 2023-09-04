@@ -8,7 +8,7 @@
     padding-left: calc(50% - $contentWidth/2);
     padding-right: calc(50% - $contentWidth/2);
 
-    @media(min-width: 768px) and (max-width: 1024px) {
+    @media(min-width: 768px) and (max-width: 1023px) {
         padding-left: calc(50% - $contentWidthTablet/2);
         padding-right: calc(50% - $contentWidthTablet/2);
     }
