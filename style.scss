@@ -171,19 +171,18 @@
 
 .products {
     margin-top: 65px;
+    width: 100vw;
 
     &__group {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto;
         gap: 30px;
-        // margin: 0px auto;
         max-width: 1140px;
 
         @media(min-width: 768px) and (max-width: 1023px) {
             gap: 20px;
-            max-width: 736px;
-            // margin: 0px auto;
+            max-width: $contentWidthTablet;
         }
 
         &Item {
@@ -210,7 +209,7 @@
         }
 
         &Item4 {
-            max-width: 1142px;
+            max-width: 1140px;
             height: 180px;
             background-image: url('img/accesories.jpg');
 
@@ -547,10 +546,6 @@
     .foto4 {
         width: 735px;
         height: 117px;
-    }
-
-    .products {
-        width: 736px;
     }
 
     .featuredItems {
