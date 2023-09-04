@@ -206,6 +206,7 @@
 .products__groupItem4 {
   max-width: 1142px;
   height: 180px;
+  background-image: url("img/accesories.jpg");
 }
 .products__groupTitle {
   position: absolute;
